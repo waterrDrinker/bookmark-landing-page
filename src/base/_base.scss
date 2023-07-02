@@ -1,0 +1,37 @@
+@use '../utils/functions' as f;
+
+html {
+	box-sizing: border-box;
+	font-size: 100%;
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+body {
+	font-size: f.rem(18);
+	font-family: 'Rubik', sans-serif;
+}
+
+.container {
+	max-width: 1140px;
+}
+
+.flex {
+	display: flex;
+}
+
+.flex-col {
+	flex-direction: column;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}

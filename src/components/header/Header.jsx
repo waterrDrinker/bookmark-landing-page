@@ -8,9 +8,11 @@ const Header = () => {
 			</div>
 			<div className="">
 				<nav>
-					{navLinks.map((link, index) => (
-						<li key={`link-${index}`}>{link.title}</li>
-					))}
+					<ul>
+						{navLinks.map((link, index) => (
+							<li key={`link-${index}`}><a href='#!'>{link.title}</a></li>
+						))}
+					</ul>
 				</nav>
 				<a href="#!">Login</a>
 			</div>
