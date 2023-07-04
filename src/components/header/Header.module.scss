@@ -1,0 +1,41 @@
+@use "../../utils" as u;
+
+.header {
+  width: 100%;
+  height: u.rem(128);
+  padding: u.em(48, 14) 0;
+  justify-content: space-between;
+  align-items: center;
+  font-size: u.rem(14);
+  letter-spacing: 2px;
+
+  .navbar {
+    @include u.breakpoint(medium) {
+      display: none;
+    }
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    padding-left: u.em(6, 14);
+    width: 100%;
+    height: 100%;
+		z-index: 5;
+		margin-right: 1em;
+  }
+
+  .links {
+    margin-right: u.em(50, 14);
+    color: var(--neutral-very-dark-blue);
+  }
+
+  .links a {
+    color: var(--neutral-very-dark-blue);
+  }
+
+  .links a:hover {
+    color: var(--primary-soft-red);
+  }
+
+}

@@ -8,9 +8,9 @@
 	}
 };
 
-@function em($px) {
-	@if math.is-unitless($px) {
-		@return math.div($px, 16) + em;
+@function em($px, $em: 16) {
+	@if math.is-unitless($px) and math.is-unitless($em) {
+		@return math.div($px, $em) + em;
 	} @else {
 		@error 'Don\'t use units when using "toEm" function; only numbers.'
 	}

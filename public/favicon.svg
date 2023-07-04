@@ -1,9 +1,9 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
-<svg width="256px" height="256px" viewBox="-5.28 -5.28 58.56 58.56" version="1" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 48 48" fill="#000000" stroke="#000000" stroke-width="0.768">
+<svg height="256px" width="256px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-57.55 -57.55 474.78 474.78" xml:space="preserve" fill="#000000">
 <g id="SVGRepo_bgCarrier" stroke-width="0">
-<rect x="-5.28" y="-5.28" width="58.56" height="58.56" rx="29.28" fill="#f2f2f2" strokewidth="0"/>
+<rect x="-57.55" y="-57.55" width="474.78" height="474.78" rx="237.39" fill="#5368df" strokewidth="0"/>
 </g>
 <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
-<g id="SVGRepo_iconCarrier"> <path fill="#7a8eff" d="M37,43l-13-6l-13,6V9c0-2.2,1.8-4,4-4h18c2.2,0,4,1.8,4,4V43z"/> </g>
+<g id="SVGRepo_iconCarrier"> <path style="fill:#ffffff;" d="M271.042,350l-86.4-66.4c-2.8-2.4-6.8-2.4-9.6,0l-86.4,66.4c-5.2,4-12.8,0.4-12.8-6.4V40 c0-17.6,14.4-32,32-32h144c17.6,0,32,14.4,32,32v303.6C283.842,350.4,276.242,354,271.042,350z"/> <path style="fill:#ffffff;" d="M83.842,359.6c-2.4,0-4.8-0.4-7.2-1.6c-5.6-2.8-8.8-8.4-8.8-14.4V40c0-22,18-40,40-40h144 c22,0,40,18,40,40v303.6c0,6-3.6,11.6-8.8,14.4c-5.6,2.8-12,2-16.8-1.6l-86.4-66.4l-86.4,66.4 C90.642,358.4,87.042,359.6,83.842,359.6z M189.842,277.2l86,66.4l0,0l0,0V40c0-13.2-10.8-24-24-24h-144c-13.2,0-24,10.8-24,24 v303.6l86-66.4C175.842,272.8,183.842,272.8,189.842,277.2z"/> <path style="fill:#ffffff;" d="M235.842,311.6l40,32v-304c0-13.2-10.8-24-24-24h-16V311.6z"/> <g> <path style="fill:#ffffff;" d="M235.842,172c-4.4,0-8-3.6-8-8v-12c0-4.4,3.6-8,8-8s8,3.6,8,8v12 C243.842,168.4,240.242,172,235.842,172z"/> <path style="fill:#ffffff;" d="M235.842,124c-4.4,0-8-3.6-8-8V8c0-4.4,3.6-8,8-8s8,3.6,8,8v108 C243.842,120.4,240.242,124,235.842,124z"/> </g> </g>
 </svg>

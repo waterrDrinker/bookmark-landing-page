@@ -1,0 +1,77 @@
+@use "../../utils" as u;
+
+.burger {
+  display: none;
+
+  @include u.breakpoint(medium) {
+    display: block;
+  }
+
+  .menu-button,
+  .menu-button-open {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		position: relative;
+    cursor: pointer;
+    width: u.rem(18);
+    height: u.rem(15);
+    z-index: 5;
+  }
+
+  .menu-button-line {
+    width: 100%;
+    height: u.rem(3);
+    background-color: var(--neutral-very-dark-blue);
+		transition: all 0.4s ease-in-out;
+  } 
+
+	.menu-button, .menu-button-open .menu-button-line:nth-child(1) {
+		transform-origin: 0% 0%;
+		transition: transform 0.4s ease-in-out;
+	}
+	.menu-button, .menu-button-open .menu-button-line:nth-child(2) {
+		transition: transform 0.2s ease-in-out;
+	}
+	.menu-button, .menu-button-open .menu-button-line:nth-child(3) {
+		transform-origin: 0% 100%;
+		transition: transform 0.4s ease-in-out;
+	}
+	.menu-button-open .menu-button-line:nth-child(1) {
+		background-color: white;
+		transform: rotate(45deg);
+	}
+	.menu-button-open .menu-button-line:nth-child(2) {
+		background-color: white;
+		transform: scaleY(0);
+	}
+	.menu-button-open .menu-button-line:nth-child(3) {
+		background-color: white;
+		transform: rotate(-45deg);
+	}
+}
+
+.mobile {
+	.menu {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		position: absolute;
+		top: 0;
+		left: 0;
+		font-size: u.rem(18);
+		width: 100%;
+		height: 100vh;
+		background-color: var(--neutral-very-dark-blue);
+		opacity: 0.9;
+		z-index: 2;
+			a {
+				color: white;
+			}
+
+			.login-btn {
+				
+			}
+	}
+}
