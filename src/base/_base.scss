@@ -1,4 +1,4 @@
-@use '../utils/functions' as f;
+@use '../utils' as u;
 
 html {
 	box-sizing: border-box;
@@ -7,12 +7,30 @@ html {
 
 *, *::before, *::after {
 	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
 }
 
 body {
-	padding: f.rem(8) f.rem(32);
-	font-size: f.rem(18); // 27px
+	padding: u.rem(8) u.rem(32);
+	font-size: u.rem(18); // 27px
 	font-family: 'Rubik', sans-serif;
+	font-weight: 400;
+}
+
+h1, h2, h3 {
+	color: var(--neutral-very-dark-blue);
+	font-weight: 500;
+	margin: 0;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+p {
+	color: var(--neutral-grayish-blue);
+	font-weight: 400;
 }
 
 a {
@@ -26,7 +44,7 @@ ul {
 }
 
 .container {
-	max-width: f.rem(1440);
+	max-width: u.rem(1440);
 }
 
 .none {
@@ -53,19 +71,54 @@ ul {
 	margin: 0 auto;
 }
 
+.btn {
+	transition: all 0.1s ease-in-out;
+}
+
+.default-btn {
+	background-color: var(--primary-soft-blue);
+	color: white;
+	padding: u.em(19) u.em(24);
+	border-radius: 5px;
+	box-shadow: 0px 4px 10px 0px rgba(83, 104, 223, 0.25);
+}
+
+.default-btn:hover {
+	background-color: white;
+	outline: u.rem(2) solid var(--primary-soft-blue);
+	color: var(--primary-soft-blue);
+}
+
 .red-btn {
 	background-color: var(--primary-soft-red);
 	color: white;
-	padding: f.em(16) f.em(35);
+	padding: u.em(16) u.em(35);
 	border-radius: 5px;
+	box-shadow: 0px 4px 10px 0px rgba(83, 104, 223, 0.25);
 }
 
 .red-btn:hover {
 	background-color: white;
-	outline: f.rem(2) solid var(--primary-soft-red);
+	outline: u.rem(2) solid var(--primary-soft-red);
 	color: var(--primary-soft-red);
 }
 
+.link {
+	transition: color 0.1s ease-in-out;
+}
+
 .header-links, .footer-links {
-	gap: f.em(50, 14);
+	gap: u.em(50, 14);
+}
+
+.figure {
+	position: absolute;
+	top: 35%;
+	left: 25%;
+	z-index: 2;
+	width: u.rem(500);
+	height: u.rem(360);
+	padding-right: 5000px;
+	border-radius: 99999px;
+	background-color: var(--primary-soft-blue);
 }

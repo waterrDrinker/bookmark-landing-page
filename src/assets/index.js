@@ -8,7 +8,7 @@ import hamburger from "./icon-hamburger.svg";
 import features1 from "./illustration-features-tab-1.svg";
 import features2 from "./illustration-features-tab-2.svg";
 import features3 from "./illustration-features-tab-3.svg";
-import hero from "./illustration-hero.svg";
+import heroImg from "./illustration-hero.svg";
 import chrome from "./logo-chrome.svg";
 import firefox from "./logo-firefox.svg";
 import opera from "./logo-opera.svg";
@@ -26,7 +26,7 @@ export {
 	features1,
 	features2,
 	features3,
-	hero,
+	heroImg,
 	chrome,
 	firefox,
 	opera,

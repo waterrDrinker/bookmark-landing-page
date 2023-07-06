@@ -1,0 +1,57 @@
+@use '../../utils' as u;
+
+.hero {
+	margin: 0 auto u.rem(135);
+}
+
+.container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.content {
+	padding-top: u.em(145, 18);
+	max-width: u.em(480, 18);
+	
+	.title {
+		font-size: 3rem;
+		margin-bottom: u.rem(40);
+	}
+
+	p {
+		margin-bottom: u.rem(40);
+	}
+
+  a:first-child {
+		margin-right: 1rem;
+	}
+
+	a:last-child {
+		background-color: rgb(247, 247, 247);
+		box-shadow: 0px 4px 10px 0px rgba(37, 43, 70, 0.25);
+		color: var(--neutral-very-dark-blue);
+		padding: u.em(19) u.em(24);
+		border-radius: 5px;
+	}
+
+	a:last-child:hover {
+		background-color: white;
+		color: var(--neutral-very-dark-blue);
+		outline: 1px solid var(--neutral-very-dark-blue);
+	}
+}
+
+.image {
+	position: relative;
+	max-width: 58vw;
+	padding-top: u.rem(62);
+	margin-right: -(u.rem(65));
+
+	img {
+		position: relative;
+		max-width: 100%;
+		max-height: 100%;
+		display: block;
+		z-index: 5;
+	}
+}

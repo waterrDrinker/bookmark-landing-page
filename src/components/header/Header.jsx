@@ -17,11 +17,11 @@ const Header = () => {
 				<nav>
 					<ul className={`flex header-links ${header.links}`}>
 						{navLinks.map((link, index) => (
-							<li key={`link-${index}`}><a href='#!'>{link.title}</a></li>
+							<li key={`link-${index}`}><a href='#!' className="link">{link.title}</a></li>
 						))}
 					</ul>
 				</nav>
-				<a href="#!" className='red-btn'>Login</a>
+				<a href="#!" className='btn red-btn'>Login</a>
 			</div>
 			<div className={menu.burger}>
 				<div className={toggle ? `${menu['menu-button-open']}` : `${menu['menu-button']}`}

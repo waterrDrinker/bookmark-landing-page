@@ -16,7 +16,7 @@
     cursor: pointer;
     width: u.rem(18);
     height: u.rem(15);
-    z-index: 5;
+    z-index: 20;
   }
 
   .menu-button-line {
@@ -65,7 +65,7 @@
 		height: 100vh;
 		background-color: var(--neutral-very-dark-blue);
 		opacity: 0.9;
-		z-index: 2;
+		z-index: 17;
 			a {
 				color: white;
 			}
