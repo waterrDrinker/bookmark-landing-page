@@ -7,8 +7,8 @@ const Features = () => {
 
 	return (
 		<section className='container m-auto'>
-			<div>
-				<div className={feature.info}>
+			<div className={feature.main}>
+				<div className={feature.about}>
 					<h2 className={feature.title}>Features</h2>
 					<p className={feature.description}>
 						Our aim is to make it quick and easy for you to access your favourite websites.
@@ -34,16 +34,16 @@ const Features = () => {
 				</div>
 			</div>
 			<div className="">
-				<div className="">
-					<img src="" alt="" />
-				</div>
-				<div>
-					<h3>Bookmark in one click</h3>
-					<p>
-						Organize your bookmarks however you like. Our simple drag-and-drop interface
-						gives you complete control over how you manage your favourite sites.
-					</p>
-					<button>More Info</button>
+				<div className={feature.content}>
+					<div className={feature.image}>
+						<img src={features[active].img} alt="feature-image" />
+						<div className={`figure ${feature.figure}`}></div>
+					</div>
+					<div className={feature.info}>
+						<h3 className={feature.title}>{features[active].title}</h3>
+						<p className={feature.text}>{features[active].desc}</p>
+						<button className="default-btn">More Info</button>
+					</div>
 				</div>
 			</div>
 		</section>

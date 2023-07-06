@@ -5,9 +5,9 @@ import error from "./icon-error.svg";
 import facebook from "./icon-facebook.svg";
 import twitter from "./icon-twitter.svg";
 import hamburger from "./icon-hamburger.svg";
-import features1 from "./illustration-features-tab-1.svg";
-import features2 from "./illustration-features-tab-2.svg";
-import features3 from "./illustration-features-tab-3.svg";
+import feature1 from "./illustration-features-tab-1.svg";
+import feature2 from "./illustration-features-tab-2.svg";
+import feature3 from "./illustration-features-tab-3.svg";
 import heroImg from "./illustration-hero.svg";
 import chrome from "./logo-chrome.svg";
 import firefox from "./logo-firefox.svg";
@@ -23,9 +23,9 @@ export {
 	facebook,
 	twitter,
 	hamburger,
-	features1,
-	features2,
-	features3,
+	feature1,
+	feature2,
+	feature3,
 	heroImg,
 	chrome,
 	firefox,

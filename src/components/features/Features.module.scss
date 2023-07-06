@@ -1,6 +1,10 @@
 @use '../../utils/' as u;
 
-.info {
+.main {
+	margin-bottom: u.rem(72);
+}
+
+.about {
 	max-width: u.rem(531);
 	margin: 0 auto u.rem(52);
 	
@@ -38,7 +42,7 @@
 		width: 100%;
 		background-color: var(--primary-soft-red);
 		border: none;
-		transition: all 0.3s ease-in-out;
+		transition: all 0.25s ease-in-out;
 	}
 
 	.sub-border {
@@ -50,3 +54,37 @@
 	}
 }
 
+.content {
+	display: flex;
+	justify-content: space-between;
+	gap: u.rem(125);
+
+	.info {
+		max-width: 450px;
+
+		.title {
+			font-size: u.rem(32);
+			padding-top: u.rem(71);
+			margin-bottom: u.rem(38);
+		}
+	
+		.text {
+			margin-bottom: u.rem(40);
+		}
+	}
+
+	.image {
+		position: relative;
+
+		img {
+			position: relative;
+			z-index: 5;
+		}	
+		
+		.figure {
+			top: 82px;
+			right: 74px;
+			padding-left: 5000px;
+		}
+	}
+}

@@ -1,3 +1,5 @@
+import { feature1, feature2, feature3 } from '../assets';
+
 const navLinks = [
 	{
 		id: 'features',
@@ -18,19 +20,22 @@ const features = [
 		id: 0,
 		name: 'Simple Bookmarking',
 		title: 'Bookmark in one click',
-		desc: 'Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.'
+		desc: 'Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.',
+		img: feature1,
 	},
 	{
 		id: 1,
 		name: 'Speedy Searching',
 		title: 'Intelligent search',
-		desc: 'Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.'
+		desc: 'Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.',
+		img: feature2,
 	},
 	{
 		id: 2,
 		name: 'Easy Sharing',
 		title: 'Share your bookmarks',
-		desc: 'Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.'
+		desc: 'Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.',
+		img: feature3,
 	},
 ]
 

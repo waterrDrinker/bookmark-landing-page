@@ -12,7 +12,7 @@ const Hero = () => {
 							A clean and simple interface to organize your favourite websites. Open a new
 							browser tab and see your sites load instantly. Try it for free.
 						</p>
-						<div className="">
+						<div className='flex'>
 							<a href="#!" className='btn default-btn'>Get it on Chrome</a>
 							<a href="#!" className='btn'>Get it on Firefox</a>
 						</div>
@@ -20,7 +20,7 @@ const Hero = () => {
 				</div>
 				<div className={hero.image}>
 					<img src={heroImg} alt="app-image" />
-					<div className='figure'></div>
+					<div className={`figure ${hero.figure}`}></div>
 				</div>
 			</div>
 		</section>
