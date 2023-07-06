@@ -4,7 +4,7 @@ import feature from './Features.module.scss';
 
 const Features = () => {
 	const [active, setActive] = useState(0)
-	console.log(active)
+
 	return (
 		<section className='container m-auto'>
 			<div>
@@ -18,14 +18,19 @@ const Features = () => {
 				<div className={feature.bar}>
 					<div className={feature.buttons}>
 						{features.map((title, index) => (
-							<button key={title.name} onClick={() => {
+							<button 
+							key={title.id} 
+							className={feature[`btn-${index + 1}`]} 
+							onClick={() => {
 								setActive(index);
-							}}>
+							}}
+							>
 								{title.name}
 							</button>
 						))}
+						<hr style={{marginLeft: `${active * 100}%`}} />
+						<div className={feature['sub-border']}></div>
 					</div>
-					<hr />
 				</div>
 			</div>
 			<div className="">

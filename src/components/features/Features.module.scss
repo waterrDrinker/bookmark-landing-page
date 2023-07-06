@@ -20,9 +20,9 @@
 }
 
 .buttons {
-	display: flex;
-	justify-content: center;
-	// max-width: u.rem(730);
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	// justify-content: center;
 	margin: 0 auto;
 	button {
 		background-color: white;
@@ -32,11 +32,21 @@
 		padding: u.rem(30) u.rem(42);
 		cursor: pointer;
 	}
+
+	hr {
+		height: 4px !important;
+		width: 100%;
+		background-color: var(--primary-soft-red);
+		border: none;
+		transition: all 0.3s ease-in-out;
+	}
+
+	.sub-border {
+		background-color: var(--neutral-grayish-blue);
+		opacity: 0.4;
+		width: 100%;
+		height: 1px;
+		grid-column: 1 / span 3;
+	}
 }
 
-hr {
-	height: 4px !important;
-	width: 100%;
-	background-color: var(--primary-soft-red);
-	transition: all 0.3s ease-in-out;
-}
