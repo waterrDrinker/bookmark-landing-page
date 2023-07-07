@@ -22,6 +22,7 @@ h1, h2, h3 {
 	color: var(--neutral-very-dark-blue);
 	font-weight: 500;
 	margin: 0;
+	text-align: center;
 }
 
 h2 {
@@ -70,6 +71,10 @@ img {
 	align-items: center;
 }
 
+.jc-center {
+	justify-content: center;
+}
+
 .flex-col {
 	flex-direction: column;
 }
@@ -79,11 +84,13 @@ img {
 }
 
 .m-auto {
-	margin: 0 auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .btn {
 	display: block;
+	width: max-content;
 	transition: all 0.1s ease-in-out;
 }
 

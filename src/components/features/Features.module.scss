@@ -1,5 +1,9 @@
 @use '../../utils/' as u;
 
+section {
+	margin-bottom: u.rem(250);
+}
+
 .main {
 	margin-bottom: u.rem(72);
 }
@@ -35,6 +39,11 @@
 		// font-size: ;
 		padding: u.rem(30) u.rem(42);
 		cursor: pointer;
+		transition: color 0.25s ease-in-out;
+	}
+
+		button:hover {
+		color: var(--primary-soft-red);
 	}
 
 	hr {
@@ -66,6 +75,7 @@
 			font-size: u.rem(32);
 			padding-top: u.rem(71);
 			margin-bottom: u.rem(38);
+			text-align: start;
 		}
 	
 		.text {

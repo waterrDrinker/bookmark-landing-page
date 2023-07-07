@@ -1,2 +1,3 @@
 1. btn-shadows;
 2. burger menu;
+3. extension card border-bottom;

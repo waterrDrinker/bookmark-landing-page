@@ -1,4 +1,5 @@
 import { feature1, feature2, feature3 } from '../assets';
+import { chrome, firefox, opera } from '../assets';
 
 const navLinks = [
 	{
@@ -43,17 +44,17 @@ const browsers = [
 	{
 		title: 'Add to Chrome',
 		version: 'Minimum version 62',
-		icon: ''
+		icon: chrome,
 	},
 	{
 		title: 'Add to Firefox',
 		version: 'Minimum version 55',
-		icon: ''
+		icon: firefox,
 	},
 	{
 		title: 'Add to Opera',
 		version: 'Minimum version 46',
-		icon: ''
+		icon: opera,
 	}
 ]
 

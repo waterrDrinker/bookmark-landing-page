@@ -33,7 +33,7 @@ const Features = () => {
 					</div>
 				</div>
 			</div>
-			<div className="">
+			<div>
 				<div className={feature.content}>
 					<div className={feature.image}>
 						<img src={features[active].img} alt="feature-image" />
@@ -42,7 +42,7 @@ const Features = () => {
 					<div className={feature.info}>
 						<h3 className={feature.title}>{features[active].title}</h3>
 						<p className={feature.text}>{features[active].desc}</p>
-						<button className="default-btn">More Info</button>
+						<a href="#!" className="default-btn btn">More Info</a>
 					</div>
 				</div>
 			</div>
