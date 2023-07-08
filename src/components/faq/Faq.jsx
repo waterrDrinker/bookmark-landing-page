@@ -1,22 +1,36 @@
+import { useState } from "react";
 import { questions } from "../../constants";
+import AccordionItem from "./AccordionItem";
+import faq from './Faq.module.scss';
 
 const Faq = () => {
+
+	const handleToggle = (index) => {
+		if (clicked === index) {
+			return setClicked('0');
+		}
+		setClicked(index);
+	}
+
 	return (
-		<section>
-			<div className="">
-				<h3>Frequently Asked Questions</h3>
-				<p>
-					Here are some of our FAQs. If you have any other questions you’d like
-					answered please feel free to email us.
-				</p>
-				<div className="">
-					<ul>
-						{questions.map((q) => (
-							<li key={q.title}>{q.title}</li>
-						))}
-					</ul>
-					<a href="">More Info</a>
+		<section className={faq.section}>
+			<div className={faq.container}>
+				<div className={faq.header}>
+					<h3>Frequently Asked Questions</h3>
+					<p>
+						Here are some of our FAQs. If you have any other questions you’d like
+						answered please feel free to email us.
+					</p>
 				</div>
+				<ul className={faq.faq}>
+					{questions.map((q, index) => (
+						<AccordionItem 
+						key={index} 
+						q={q} 
+						/>
+					))}
+				</ul>
+				<a href="#!" className="btn default-btn">More info</a>
 			</div>
 		</section>
 	)

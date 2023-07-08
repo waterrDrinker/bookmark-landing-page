@@ -1,0 +1,25 @@
+@use '../../utils' as u;
+
+.section {
+
+	.container {
+		max-width: u.rem(540);
+		margin: 0 auto;
+
+		.header {
+			text-align: center;
+			margin-bottom: u.rem(64);
+			h3 {
+				margin-bottom: u.rem(38);
+			}
+		}
+
+		.faq {
+			margin-bottom: u.rem(54);
+		}
+
+		a {
+			margin: 0 auto;
+		}
+	}
+}

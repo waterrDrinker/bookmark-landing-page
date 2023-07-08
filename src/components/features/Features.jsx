@@ -6,7 +6,9 @@ const Features = () => {
 	const [active, setActive] = useState(0)
 
 	return (
-		<section className='container m-auto'>
+		<section 
+		className={`${feature.section} container m-auto`}
+		>
 			<div className={feature.main}>
 				<div className={feature.about}>
 					<h2 className={feature.title}>Features</h2>

@@ -1,0 +1,46 @@
+@use '../../utils/' as u;
+
+.item {
+	width: 100%;
+	border-top: 1px solid rgba(145, 148, 161, 0.4);
+	border-bottom: 1px solid rgba(145, 148, 161, 0.4);
+
+	.btn {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		font-weight: 500;
+		padding: u.rem(28) 0;
+		background-color: white;
+		border: none;
+		cursor: pointer;
+		transition: color 0.1s ease-in-out;
+
+		.btn-icon {
+			width: u.rem(18);
+			height: u.rem(11);
+			transition: transform 0.2s ease-in-out;
+		}
+
+		.btn-icon.active {
+			filter: invert(67%) sepia(58%) saturate(5217%) hue-rotate(326deg) brightness(99%) contrast(97%);
+			transform: rotate(180deg);
+		}
+	}
+
+	.btn:hover {
+		color: var(--primary-soft-red);
+	}
+
+	.answer-wrapper {
+		height: 0;
+		overflow: hidden;
+		transition: height 0.2s ease-in-out;
+
+		.answer {
+			padding: u.rem(25) 0 u.rem(42);
+		}
+	}
+	//padding: ;
+}
