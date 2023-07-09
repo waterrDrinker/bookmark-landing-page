@@ -6,15 +6,14 @@ const AccordionItem = ({ q }) => {
 	const [clicked, setClicked] = useState(false);
 	const [height, setHeight] = useState(0)
 	const contentEl = useRef();
-
+	const textEl = useRef();
 	const { question, answer } = q;
 
 	useEffect(() => {
-		setHeight(contentEl.current.scrollHeight);
+		setHeight(textEl.current.scrollHeight);
 		const handleWindowResize = () => {
-			setHeight(contentEl.current.scrollHeight);
+			setHeight(textEl.current.scrollHeight);
 		}
-
 		window.addEventListener('resize', handleWindowResize);
 		return () => {
 			window.addEventListener('resize', handleWindowResize);
@@ -44,7 +43,10 @@ const AccordionItem = ({ q }) => {
 				: { height: '0px' }
 			}
 			>
-				<p className={accordion.answer}>{answer}</p>
+				<p 
+				className={accordion.answer}
+				ref={textEl}
+				>{answer}</p>
 			</div>
 		</li>
 	)
