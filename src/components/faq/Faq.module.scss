@@ -1,6 +1,7 @@
 @use '../../utils' as u;
 
 .section {
+	margin-bottom: u.rem(150);
 
 	.container {
 		max-width: u.rem(540);
