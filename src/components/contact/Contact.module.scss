@@ -48,17 +48,18 @@
         border-radius: u.rem(5);
         border: none;
         outline: none;
-        padding: u.rem(19) u.rem(21);
+        padding: u.rem(15) u.rem(17);
+				border: u.rem(2) solid white;
       }
 
       input.invalid {
-        border: 2px solid var(--primary-soft-red);
+        border: u.rem(2) solid var(--primary-soft-red);
       }
 
 			.error {
 				z-index: 2;
 				position: absolute;
-				top: 70%;
+				top: 65%;
 				transform: translateY(-50%);
 				font-size: u.rem(10);
 				padding: u.rem(8) u.rem(12);
@@ -92,14 +93,15 @@
       background-color: var(--primary-soft-red);
       color: white;
       border-radius: u.rem(5);
-      padding: u.rem(21) u.rem(25);
+      padding: u.rem(17) u.rem(21);
       cursor: pointer;
+			border: u.rem(2) solid var(--primary-soft-red);
     }
 
     .btn:hover {
       background-color: white;
       color: var(--primary-soft-red);
-      outline: 2px solid var(--primary-soft-red);
+      border: u.rem(2) solid var(--primary-soft-red);
     }
   }
 }

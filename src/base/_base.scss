@@ -105,28 +105,30 @@ input,textarea {
 	border: none;
 	background-color: var(--primary-soft-blue);
 	color: white;
-	padding: u.em(19) u.em(24);
+	padding: u.em(15) u.em(19);
 	border-radius: 5px;
 	box-shadow: 0px 4px 10px 0px rgba(83, 104, 223, 0.25);
+	border: u.rem(2) solid var(--primary-soft-blue);
 }
 
 .default-btn:hover {
 	background-color: white;
-	outline: u.rem(2) solid var(--primary-soft-blue);
+	border: u.rem(2) solid var(--primary-soft-blue);
 	color: var(--primary-soft-blue);
 }
 
 .red-btn {
 	background-color: var(--primary-soft-red);
 	color: white;
-	padding: u.em(16) u.em(35);
+	padding: u.em(11) u.em(31);
 	border-radius: 5px;
 	box-shadow: 0px 4px 10px 0px rgba(83, 104, 223, 0.25);
+	border: u.rem(2) solid var(--primary-soft-red);
 }
 
 .red-btn:hover {
 	background-color: white;
-	outline: u.rem(2) solid var(--primary-soft-red);
+	border: u.rem(2) solid var(--primary-soft-red);
 	color: var(--primary-soft-red);
 }
 

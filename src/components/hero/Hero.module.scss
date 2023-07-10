@@ -31,14 +31,15 @@
 		background-color: rgb(247, 247, 247);
 		box-shadow: 0px 4px 10px 0px rgba(37, 43, 70, 0.25);
 		color: var(--neutral-very-dark-blue);
-		padding: u.em(19) u.em(24);
+		padding: u.em(15) u.em(20);
 		border-radius: 5px;
+		border: u.rem(2) solid white;
 	}
 
 	a:last-child:hover {
 		background-color: white;
 		color: var(--neutral-very-dark-blue);
-		outline: 1px solid var(--neutral-very-dark-blue);
+		border: u.rem(2) solid var(--neutral-very-dark-blue);
 	}
 }
 
