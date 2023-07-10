@@ -1,0 +1,105 @@
+@use "../../utils/" as u;
+
+.section {
+  width: 100%;
+  background-color: var(--primary-soft-blue);
+  margin: 0 auto;
+  padding: 0 u.rem(32);
+
+  .header {
+    color: white;
+    text-align: center;
+    max-width: u.rem(410);
+    margin: 0 auto;
+    margin-bottom: u.rem(45);
+
+    p {
+      font-size: u.rem(14);
+      color: white;
+      padding-top: u.rem(73);
+      margin-bottom: u.rem(48);
+      letter-spacing: u.rem(5);
+      text-transform: uppercase;
+    }
+
+    h2 {
+      color: white;
+    }
+  }
+
+  .form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+		flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: u.rem(445);
+    padding-bottom: u.rem(74);
+
+    .input {
+			position: relative;
+			width: u.rem(300);
+
+      input {
+				z-index: 3;
+				font-size: u.rem(14);
+				position: relative;
+        max-width: u.rem(300);
+        border-radius: u.rem(5);
+        border: none;
+        outline: none;
+        padding: u.rem(19) u.rem(21);
+      }
+
+      input.invalid {
+        border: 2px solid var(--primary-soft-red);
+      }
+
+			.error {
+				z-index: 2;
+				position: absolute;
+				top: 70%;
+				transform: translateY(-50%);
+				font-size: u.rem(10);
+				padding: u.rem(8) u.rem(12);
+				padding-top: u.rem(14);
+				font-style: italic;
+				color: white;
+				width: 100%;
+				background-color: var(--primary-soft-red);
+				border-radius: 0 0 5px 5px;
+				transition: all 0.2s ease-in-out;
+			}
+
+			.error.invalid {
+				transform: translateY(25%);
+			}
+
+      img {
+				z-index: 5;
+				// display: none;
+				user-select: none;
+				pointer-events: none;
+				position: absolute;
+				right: u.rem(15);
+				top: 50%;
+				transform: translateY(-50%);
+      }
+    }
+
+    .btn {
+      font-size: u.rem(14);
+      background-color: var(--primary-soft-red);
+      color: white;
+      border-radius: u.rem(5);
+      padding: u.rem(21) u.rem(25);
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: white;
+      color: var(--primary-soft-red);
+      outline: 2px solid var(--primary-soft-red);
+    }
+  }
+}

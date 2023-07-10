@@ -1,4 +1,4 @@
-import { Header, Hero, Features, Extension, Faq } from './components';
+import { Header, Hero, Features, Extension, Faq, Contact, Footer } from './components';
 
 function App() {
 	return (
@@ -8,6 +8,8 @@ function App() {
 			<Features />
 			<Extension />
 			<Faq />
+			<Contact />
+			<Footer />
 		</>
 	)
 }
