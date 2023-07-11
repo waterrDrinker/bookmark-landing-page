@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { navLinks } from '../../constants'
-import { logo, logoReversed } from '../../assets';
+import { headerLogo, logoWhite } from '../../assets';
 import header from './Header.module.scss';
 import menu from './Menu.module.scss';
 
@@ -11,7 +11,7 @@ const Header = () => {
 	return (
 		<header className={`flex container m-auto ${header.header}`}>
 			<div className={header.logo}>
-				<a href="#!"><img src={toggle ? logo : logoReversed} alt="bookmark-logo" /></a>
+				<a href="#!"><img src={toggle ? logoWhite : headerLogo} alt="bookmark-logo" /></a>
 			</div>
 			<div className={`${header.navbar} flex ai-center uppercase`}>
 				<nav>

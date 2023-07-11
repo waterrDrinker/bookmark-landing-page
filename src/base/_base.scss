@@ -51,9 +51,13 @@ img {
 	object-fit: contain;
 }
 
-input,textarea {
+input, textarea {
 	width:100%;
 	display:block 
+}
+
+.wrapper {
+	overflow-x: hidden;
 }
 
 .container {

@@ -1,0 +1,56 @@
+@use "../../utils/" as u;
+
+.footer {
+  width: 100%;
+  background-color: var(--neutral-very-dark-blue);
+  padding: u.rem(32) 0;
+
+  .container {
+		width: 100%;
+
+    .links {
+      display: flex;
+			align-items: center;
+
+      img {
+        margin-right: u.rem(66);
+      }
+
+      ul {
+        display: flex;
+				font-size: u.rem(14);
+				color: white;
+				letter-spacing: u.rem(2);
+
+				a {
+					color: white;
+					transition: color 0.1s ease-in-out;
+				}
+
+				a:hover {
+					color: var(--primary-soft-red);
+				}
+      }
+    }
+
+    .socials {
+      display: flex;
+			align-items: center;
+
+			a {
+				width: u.rem(24);
+				height: u.rem(24);
+				color: white;
+				transition: color 0.1s ease-in-out;
+			}
+			
+			a:last-of-type {
+				margin-left: u.rem(40);
+			}
+
+			a:hover {
+				color: var(--primary-soft-red);
+			}
+    }
+  }
+}

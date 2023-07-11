@@ -2,8 +2,8 @@ import { useRef, useState, useEffect } from 'react';
 import { arrow } from '../../assets';
 import accordion from './AccordionItem.module.scss';
 
-const AccordionItem = ({ q }) => {
-	const [clicked, setClicked] = useState(false);
+const AccordionItem = ({ q, isClicked, index, onToggle }) => {
+	// const [clicked, setClicked] = useState(false);
 	const [height, setHeight] = useState(0)
 	const contentEl = useRef();
 	const textEl = useRef();
@@ -19,26 +19,22 @@ const AccordionItem = ({ q }) => {
 			window.addEventListener('resize', handleWindowResize);
 		}
 	}, [])
-
-	const handleToggle = () => {
-		setClicked((prev) => !prev)
-	}
 	
 	return (
-		<li className={accordion.item + " " + (clicked ? accordion.active : "")}>
-			<button className={accordion.btn} onClick={handleToggle}>
+		<li className={accordion.item + " " + (isClicked ? accordion.active : "")}>
+			<button className={accordion.btn} onClick={() => onToggle(index)}>
 				{question}
 				<img 
 				src={arrow}
 				alt='expand-arrow'
-				className={accordion['btn-icon'] + " " + (clicked ? accordion.active : "")} 
+				className={accordion['btn-icon'] + " " + (isClicked ? accordion.active : "")} 
 				/>
 			</button>
 			<div 
 			ref={contentEl}
 			className={accordion['answer-wrapper']}
 			style={
-				clicked 
+				isClicked 
 				? { height: `${height}px`}
 				: { height: '0px' }
 			}

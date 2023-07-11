@@ -4,12 +4,17 @@ import AccordionItem from "./AccordionItem";
 import faq from './Faq.module.scss';
 
 const Faq = () => {
+	const [expandedAccordionItem, setExpandedAccordionItem] = useState(Array(questions.length).fill(false))
 
 	const handleToggle = (index) => {
-		if (clicked === index) {
-			return setClicked('0');
-		}
-		setClicked(index);
+		const nextList = expandedAccordionItem.map((item, i) => {
+			if (i === index) {
+				return !item
+			} else {
+				return item;
+			}
+		})
+		setExpandedAccordionItem(nextList);
 	}
 
 	return (
@@ -24,9 +29,12 @@ const Faq = () => {
 				</div>
 				<ul className={faq.faq}>
 					{questions.map((q, index) => (
-						<AccordionItem 
-						key={index} 
-						q={q} 
+						<AccordionItem
+							key={index}
+							q={q}
+							isClicked={expandedAccordionItem[index]}
+							index={index}
+							onToggle={handleToggle}
 						/>
 					))}
 				</ul>

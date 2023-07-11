@@ -2,7 +2,7 @@ import { Header, Hero, Features, Extension, Faq, Contact, Footer } from './compo
 
 function App() {
 	return (
-		<>
+		<div className='wrapper'>
 			<Header />
 			<Hero />
 			<Features />
@@ -10,7 +10,7 @@ function App() {
 			<Faq />
 			<Contact />
 			<Footer />
-		</>
+		</div>
 	)
 }
 

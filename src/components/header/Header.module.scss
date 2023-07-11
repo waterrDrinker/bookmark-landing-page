@@ -8,7 +8,7 @@
   justify-content: space-between;
   align-items: center;
   font-size: u.rem(14);
-  letter-spacing: 2px;
+  letter-spacing: u.rem(2);
 
   .navbar {
     @include u.breakpoint(medium) {

@@ -12,8 +12,9 @@ import heroImg from "./illustration-hero.svg";
 import chrome from "./logo-chrome.svg";
 import firefox from "./logo-firefox.svg";
 import opera from "./logo-opera.svg";
-import logo from './logo.svg'
-import logoReversed from './logoReversed.svg'
+import headerLogo from './logo-header.svg'
+import footerLogo from './logo-footer.svg'
+import logoWhite from './logoWhite.svg'
 
 export {
 	dots,
@@ -30,6 +31,7 @@ export {
 	chrome,
 	firefox,
 	opera,
-	logo,
-	logoReversed,
+	headerLogo,
+	footerLogo,
+	logoWhite
 }
