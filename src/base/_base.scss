@@ -149,6 +149,8 @@ input, textarea {
 	z-index: 2;
 	width: u.rem(500);
 	height: u.rem(360);
+	max-height: u.rem(360);
 	border-radius: 99999px;
 	background-color: var(--primary-soft-blue);
 }
+

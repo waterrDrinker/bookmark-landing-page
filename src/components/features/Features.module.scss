@@ -1,100 +1,185 @@
-@use '../../utils/' as u;
+@use "../../utils/" as u;
 
 .section {
-	margin-bottom: u.rem(250);
+  margin-bottom: u.rem(250);
 }
 
 .main {
-	margin-bottom: u.rem(72);
+  margin-bottom: u.rem(72);
+
+  .about {
+    max-width: u.rem(531);
+    margin: 0 auto u.rem(52);
+
+    .title {
+      text-align: center;
+      margin-bottom: u.rem(38);
+
+      @include u.breakpoint(medium) {
+        margin-bottom: u.rem(25);
+      }
+    }
+
+    .description {
+      text-align: center;
+      line-height: 2rem;
+    }
+  }
 }
 
-.about {
-	max-width: u.rem(531);
-	margin: 0 auto u.rem(52);
-	
-	.title {
-		text-align: center;
-		margin-bottom: u.rem(38);
-	}
-	
-	.description {
-		text-align: center;
-	}
-}
+.bar {
+  max-width: max-content;
+  margin: 0 auto;
 
-.bar{
-	max-width: max-content;
-	margin: 0 auto;
+  @include u.breakpoint(medium) {
+    max-width: unset;
+    width: 100%;
+  }
 }
 
 .buttons {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	// justify-content: center;
-	margin: 0 auto;
-	button {
-		background-color: white;
-		color: var(--neutral-very-dark-blue);
-		border: none;
-		// font-size: ;
-		padding: u.rem(30) u.rem(42);
-		cursor: pointer;
-		transition: color 0.25s ease-in-out;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  // justify-content: center;
+  margin: 0 auto;
+
+	@include u.breakpoint(medium) {
+		:nth-child(3) {
+			border-bottom: 1px solid rgba(145, 148, 161, 0.4);
+		}
 	}
 
-		button:hover {
-		color: var(--primary-soft-red);
-	}
+  @include u.breakpoint(medium) {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
 
-	hr {
-		height: 4px !important;
-		width: 100%;
-		background-color: var(--primary-soft-red);
-		border: none;
-		transition: all 0.25s ease-in-out;
-	}
+    // button::after {
+    //   display: block;
+    //   content: "";
+    //   border-bottom: solid 3px var(--primary-soft-red);
+    //   transform: scaleX(0);
+    //   transition: transform 250ms ease-in-out;
+    // }
 
-	.sub-border {
-		background-color: var(--neutral-grayish-blue);
-		opacity: 0.4;
-		width: 100%;
-		height: 1px;
-		grid-column: 1 / span 3;
-	}
+    // button::after {
+    //   
+    // }
+  }
+
+  .btn-wrapper {
+
+		.btn {
+			hr {
+				display: none;
+			}
+
+			@include u.breakpoint(medium) {
+				hr {
+					margin: 0 auto;
+					display: block;
+					height: 3px;
+					width: 58%;
+					transform: scaleX(0);
+      		transition: transform 250ms ease-in-out;
+				}
+
+				hr.active {
+					transform: scaleX(0.90);
+				}
+			}
+		}
+
+		@include u.breakpoint(medium) {
+			border-top: 1px solid rgba(145, 148, 161, 0.4);
+
+			.btn {
+				max-width: max-content;
+				margin: 0 auto;
+			}
+	
+			.btn.active {
+				border-bottom: 3px solid var(--primary-soft-red);
+			}
+		}
+
+    button {
+      background-color: white;
+      color: var(--neutral-very-dark-blue);
+      border: none;
+      display: block;
+      padding: u.rem(30) u.rem(42);
+      cursor: pointer;
+      transition: color 0.25s ease-in-out;
+
+      @include u.breakpoint(medium) {
+        margin: 0 auto;
+				padding-bottom: u.rem(27);
+      }
+    }
+  }
+
+  button:hover {
+    color: var(--primary-soft-red);
+  }
+
+  hr {
+    height: 4px !important;
+    width: 100%;
+    background-color: var(--primary-soft-red);
+    border: none;
+    transition: all 0.25s ease-in-out;
+
+    @include u.breakpoint(medium) {
+      display: none;
+    }
+  }
+
+  .sub-border {
+    background-color: var(--neutral-grayish-blue);
+    opacity: 0.4;
+    width: 100%;
+    height: 1px;
+    grid-column: 1 / span 3;
+
+    @include u.breakpoint(medium) {
+      display: none;
+    }
+  }
 }
 
 .content {
-	display: flex;
-	justify-content: space-between;
-	gap: u.rem(125);
+  display: flex;
+  justify-content: space-between;
+  gap: u.rem(125);
 
-	.info {
-		max-width: 450px;
+  .info {
+    max-width: 450px;
 
-		.title {
-			font-size: u.rem(32);
-			padding-top: u.rem(71);
-			margin-bottom: u.rem(38);
-			text-align: start;
-		}
-	
-		.text {
-			margin-bottom: u.rem(40);
-		}
-	}
+    .title {
+      font-size: u.rem(32);
+      padding-top: u.rem(71);
+      margin-bottom: u.rem(38);
+      text-align: start;
+    }
 
-	.image {
-		position: relative;
+    .text {
+      margin-bottom: u.rem(40);
+    }
+  }
 
-		img {
-			position: relative;
-			z-index: 5;
-		}	
-		
-		.figure {
-			top: 82px;
-			right: 74px;
-			padding-left: 5000px;
-		}
-	}
+  .image {
+    position: relative;
+
+    img {
+      position: relative;
+      z-index: 5;
+    }
+
+    .figure {
+      top: 82px;
+      right: 74px;
+      padding-left: 5000px;
+    }
+  }
 }

@@ -1,3 +1,4 @@
 1. btn-shadows;
 2. burger menu;
 3. extension card border-bottom;
+4. hero gap between img and info blocks

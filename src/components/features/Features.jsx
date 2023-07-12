@@ -20,15 +20,24 @@ const Features = () => {
 				<div className={feature.bar}>
 					<div className={feature.buttons}>
 						{features.map((title, index) => (
-							<button 
-							key={title.id} 
-							className={feature[`btn-${index + 1}`]} 
-							onClick={() => {
-								setActive(index);
-							}}
-							>
-								{title.name}
-							</button>
+							<div
+							className={feature['btn-wrapper']}
+							key={title.id}>
+							{/*  */}
+								<div className={feature.btn}> 
+									<button
+									// className={feature[`btn-${index + 1}`]}
+									onClick={() => {
+										setActive(index);
+									}}
+									>
+										{title.name}
+									</button>
+									<hr className={
+										index === active ? feature.active : undefined
+									} />
+								</div>
+							</div>
 						))}
 						<hr style={{marginLeft: `${active * 100}%`}} />
 						<div className={feature['sub-border']}></div>
