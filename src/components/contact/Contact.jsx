@@ -27,7 +27,8 @@ const Contact = () => {
 			onSubmit={handleSubmit}
 			noValidate
 			>
-				<div className={contact.input}>
+				<div className={contact.input + " " +
+				(invalid ? contact.invalid : undefined)}>
 					<input type="email" name="email" id="email" 
 					placeholder='Enter your email address'
 					className={invalid ? contact.invalid : undefined} value={value} 

@@ -1,27 +1,36 @@
-@use '../../utils' as u;
+@use "../../utils" as u;
 
 .section {
-	margin-bottom: u.rem(150);
-	padding: 0 u.rem(32);
+  margin-bottom: u.rem(150);
+  padding: 0 u.rem(32);
 
-	.container {
-		max-width: u.rem(540);
-		margin: 0 auto;
-
-		.header {
-			text-align: center;
-			margin-bottom: u.rem(64);
-			h3 {
-				margin-bottom: u.rem(38);
-			}
-		}
-
-		.faq {
-			margin-bottom: u.rem(54);
-		}
-
-		a {
-			margin: 0 auto;
-		}
+	@include u.breakpoint(medium){
+		margin-bottom: u.rem(123);
 	}
+
+  .container {
+    max-width: u.rem(540);
+    margin: 0 auto;
+
+    .header {
+      text-align: center;
+      margin-bottom: u.rem(64);
+
+      h3 {
+        margin-bottom: u.rem(38);
+
+				@include u.breakpoint(medium) {
+					margin-bottom: u.rem(26);
+				}
+      }
+    }
+
+    .faq {
+      margin-bottom: u.rem(54);
+    }
+
+    a {
+      margin: 0 auto;
+    }
+  }
 }

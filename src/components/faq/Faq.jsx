@@ -22,7 +22,7 @@ const Faq = () => {
 			<div className={faq.container}>
 				<div className={faq.header}>
 					<h3>Frequently Asked Questions</h3>
-					<p>
+					<p className="text">
 						Here are some of our FAQs. If you have any other questions you’d like
 						answered please feel free to email us.
 					</p>

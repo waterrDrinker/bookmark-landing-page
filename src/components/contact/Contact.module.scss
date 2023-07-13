@@ -20,10 +20,22 @@
       margin-bottom: u.rem(48);
       letter-spacing: u.rem(5);
       text-transform: uppercase;
+
+			@include u.breakpoint(medium) {
+				margin-bottom: u.rem(20);
+			}
+			
+			@include u.breakpoint(small) {
+				font-size: 0.725rem;
+			}
     }
 
     h2 {
       color: white;
+
+			@include u.breakpoint(small) {
+				font-size: 1.5rem;
+			}
     }
   }
 
@@ -36,9 +48,23 @@
     max-width: u.rem(445);
     padding-bottom: u.rem(74);
 
+		@media (max-width: u.rem(499.98)) {
+			flex-direction: column;
+		}
+
     .input {
 			position: relative;
 			width: u.rem(300);
+			transition: all 0.2s ease-in-out;
+
+			@media (max-width: u.rem(499.98)) {
+				width: 100%;
+				margin-bottom: u.rem(20);
+				:first-child {
+					width: 100%;
+					max-width: initial;
+				}
+			}
 
       input {
 				z-index: 3;
@@ -51,6 +77,10 @@
         padding: u.rem(15) u.rem(17);
 				border: u.rem(2) solid white;
       }
+
+			input::placeholder {
+				opacity: 0.4;
+			}
 
       input.invalid {
         border: u.rem(2) solid var(--primary-soft-red);
@@ -88,6 +118,12 @@
       }
     }
 
+		.input.invalid {
+			@media (max-width: u.rem(499.98)) {
+				margin-bottom: u.rem(45);
+			}
+		}
+
     .btn {
       font-size: u.rem(14);
       background-color: var(--primary-soft-red);
@@ -96,6 +132,10 @@
       padding: u.rem(17) u.rem(21);
       cursor: pointer;
 			border: u.rem(2) solid var(--primary-soft-red);
+
+			@media (max-width: u.rem(499.98)) {
+				width: 100%;
+			}
     }
 
     .btn:hover {

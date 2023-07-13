@@ -12,7 +12,7 @@ const Features = () => {
 			<div className={feature.main}>
 				<div className={feature.about}>
 					<h2 className={feature.title}>Features</h2>
-					<p className={feature.description}>
+					<p className={`${feature.description} text`}>
 						Our aim is to make it quick and easy for you to access your favourite websites.
 						Your bookmarks sync between your devices so you can access them on the go.
 					</p>
@@ -52,7 +52,7 @@ const Features = () => {
 					</div>
 					<div className={feature.info}>
 						<h3 className={feature.title}>{features[active].title}</h3>
-						<p className={feature.text}>{features[active].desc}</p>
+						<p className={`${feature.text} text`}>{features[active].desc}</p>
 						<a href="#!" className="default-btn btn">More Info</a>
 					</div>
 				</div>

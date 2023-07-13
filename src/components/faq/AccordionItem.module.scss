@@ -5,6 +5,10 @@
 	border-top: 1px solid rgba(145, 148, 161, 0.4);
 	border-bottom: 1px solid rgba(145, 148, 161, 0.4);
 
+	@include u.breakpoint(small) {
+		font-size: u.rem(15);
+	}
+
 	.btn {
 		display: flex;
 		justify-content: space-between;
@@ -39,7 +43,15 @@
 		transition: height 0.2s ease-in-out;
 
 		.answer {
+			line-height: 2.75rem;
 			padding: u.rem(25) 0 u.rem(42);
+
+			@include u.breakpoint(small) {
+				color: var(--neutral-very-dark-blue);
+				padding-top: 0;
+				padding-bottom: u.rem(35);
+				line-height: 2rem;
+			}
 		}
 	}
 	//padding: ;

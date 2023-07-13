@@ -19,8 +19,6 @@ const Footer = () => {
 					</nav>
 				</div>
 				<div className={footer.socials}>
-					{/* <a href="#!"><img className={footer.facebook} src={facebook} alt="facebook" /></a>
-					<a href="#!"><img className={footer.twitter} src={twitter} alt="twitter" /></a> */}
 					<IconContext.Provider
 						value={{size: "24px"}}
 					>

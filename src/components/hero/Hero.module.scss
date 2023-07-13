@@ -21,6 +21,10 @@
 .info {
   max-width: u.rem(480);
 
+	@include u.breakpoint(medium) { 
+		width: 100%;
+	}
+
   .content {
     padding-top: u.em(145, 18);
 
@@ -34,14 +38,23 @@
       text-align: start;
 
       @include u.breakpoint(medium) {
-        font-size: 2.7rem;
+        font-size: 2.5rem;
+        text-align: center;
+      }
+
+			@include u.breakpoint(small) {
+        font-size: 2rem;
         text-align: center;
       }
     }
 
     p {
+			text-align: left;
       margin-bottom: u.rem(36);
-			line-height: 2rem;
+
+			@include u.breakpoint(medium) {
+				text-align: center;
+			}
     }
 
     .buttons {
