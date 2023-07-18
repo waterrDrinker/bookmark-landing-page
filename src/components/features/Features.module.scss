@@ -197,6 +197,9 @@
 
   .image {
     position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 
     img {
       position: relative;
@@ -204,9 +207,10 @@
     }
 
     .figure {
-      top: 82px;
-      right: 74px;
+      top: 23%;
+      right: 12%;
       padding-left: 5000px;
+			padding-bottom: 65%;
     }
   }
 }

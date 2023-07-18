@@ -1,5 +1,5 @@
 import { navLinks } from "../../constants"
-import { footerLogo, twitter, facebook } from "../../assets";
+import { footerLogo } from "../../assets";
 import { AiFillFacebook, AiOutlineTwitter } from 'react-icons/ai'
 import footer from './Footer.module.scss';
 import { IconContext } from "react-icons";
@@ -18,7 +18,7 @@ const Footer = () => {
 						</ul>
 					</nav>
 				</div>
-				<div className={footer.socials}>
+				<div className='socials'>
 					<IconContext.Provider
 						value={{size: "24px"}}
 					>

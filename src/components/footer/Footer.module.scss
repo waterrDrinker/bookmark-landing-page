@@ -59,25 +59,5 @@
 				}
       }
     }
-
-    .socials {
-      display: flex;
-			align-items: center;
-
-			a {
-				width: u.rem(24);
-				height: u.rem(24);
-				color: white;
-				transition: color 0.1s ease-in-out;
-			}
-			
-			a:last-of-type {
-				margin-left: u.rem(40);
-			}
-
-			a:hover {
-				color: var(--primary-soft-red);
-			}
-    }
   }
 }

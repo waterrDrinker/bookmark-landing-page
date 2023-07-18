@@ -87,9 +87,13 @@
 
 .image {
   position: relative;
-  padding-top: u.rem(62);
+  // padding-top: u.rem(62);
   padding-bottom: u.rem(28);
   margin-right: -(u.rem(65));
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	top: u.rem(62);
 
   @include u.breakpoint(medium) {
     margin-right: -(u.rem(33));
@@ -102,8 +106,12 @@
   }
 
   .figure {
-    top: 35%;
+    top: 30%;
     left: 25%;
     padding-right: 5000px;
+
+		@include u.breakpoint(medium) {
+			top: 20%;
+		}
   }
 }
