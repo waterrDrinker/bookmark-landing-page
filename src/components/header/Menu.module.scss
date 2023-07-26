@@ -24,6 +24,7 @@
     box-shadow: 0 0 u.rem(30) 0 rgba(0, 0, 0, 0.175);
     border-radius: 100%;
     @include u.flex-center;
+    -webkit-tap-highlight-color: transparent;
 
     & > div {
       position: relative;
@@ -96,7 +97,7 @@
     overflow: hidden;
     z-index: 17;
     pointer-events: none;
-		user-select: none;
+    user-select: none;
 
     > img {
       position: absolute;
@@ -118,62 +119,60 @@
         max-width: u.rem(308);
 
         .links {
+          ul {
+            margin-bottom: u.rem(24);
 
-					ul {
-						margin-bottom: u.rem(24);
+            li {
+              width: 100%;
+              border-top: 1px solid var(--neutral-grayish-blue);
+              padding: u.rem(25) 0;
+              text-align: center;
+            }
 
-						li {
-							width: 100%;
-							border-top: 1px solid var(--neutral-grayish-blue);
-							padding: u.rem(25) 0;
-							text-align: center;
-						}
-	
-						li:last-child {
-							border-bottom: 1px solid var(--neutral-grayish-blue);
-						}
-					}
+            li:last-child {
+              border-bottom: 1px solid var(--neutral-grayish-blue);
+            }
+          }
 
           + .login-btn {
-						text-align: center;
-						display: block;
-						width: 100%;
-						padding: u.rem(15) 0;
-						border: 2px solid white;
-						border-radius: 5px;
+            text-align: center;
+            display: block;
+            width: 100%;
+            padding: u.rem(15) 0;
+            border: 2px solid white;
+            border-radius: 5px;
           }
         }
         a {
-					text-transform: uppercase;
+          text-transform: uppercase;
           color: white;
-					transition: color 0.3s ease-in-out;
+          transition: color 0.3s ease-in-out;
         }
 
-				a:hover {
-					color: var(--primary-soft-red);
-				}
+        a:hover {
+          color: var(--primary-soft-red);
+        }
       }
     }
   }
 
   &.open {
     visibility: visible;
-		opacity: 1;
-		transition: opacity 0.5s linear;
+    opacity: 1;
+    transition: opacity 0.5s linear;
     .menu {
-			pointer-events: auto;
+      pointer-events: auto;
       // transform: scale(1);
     }
   }
 }
 
 .visible {
-	visibility: visible;
-
+  visibility: visible;
 }
 
 .hidden {
-	visibility: hidden;
-	opacity: 0;
-	transition: visibility 0s 0.5s, opacity 0.5s linear;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 0.5s, opacity 0.5s linear;
 }
